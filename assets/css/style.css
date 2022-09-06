@@ -22,6 +22,9 @@ header {
     box-shadow: 0 3px 3px #444;
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 header div img {
     margin-bottom: 20px;
@@ -31,6 +34,7 @@ header nav ul {
 }
 header nav li {
     list-style: none;
+    display: inline-block;
 }
 header nav li a {
     color: white;
@@ -76,6 +80,15 @@ p, address, ul, ol, dl, blockquote {
 }
 h1 + p {
     color: #a0a0a0;
+}
+.imgLeft {
+    width:60;
+    height:60;
+    float: left;
+    padding: 3px;
+    border: 4px solid #00A0C6;
+    outline: 4px solid #a02571;
+    margin: 1vh 2vh;
 }
 ul, ol {
     margin-left: 2em;
@@ -143,6 +156,19 @@ button {
     font-weight: bold;
 }
 
+section {
+    position: relative;
+    padding-top: 3rem;
+}
+
+section h2 {
+    position: absolute;
+    top: -1.5rem;
+    background-color: #AAAAAA;
+    padding: 0 1rem;
+    box-shadow: 1px 1px 3px black;
+}
+
 /* ELEMENTI NELL' ASIDE */
 aside h2 {
     text-align: center;
@@ -177,4 +203,34 @@ footer {
 }
 footer a {
     color: fuchsia;
+}
+
+/* FIXED BUTTONS */
+
+.social {
+    position:fixed;
+    bottom: 20vh;
+    right: -6px;
+}
+.social a, .toTop a {
+    font-size: 4rem;
+    display: block;
+}
+.social i {
+    background-color: white;
+    padding: 2px 3px;
+    color: #3266CC;
+    border-radius: 5px;
+}
+.toTop {
+    position:fixed;
+    bottom: 8vh;
+    right: -6px;
+}
+
+.toTop i {
+    background-color: white;
+    padding: 2px 3px;
+    color: #CC77A8;
+    border-radius: 5px;
 }
